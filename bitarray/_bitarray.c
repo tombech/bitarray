@@ -3048,6 +3048,8 @@ init_bitarray(void)
 
     Py_TYPE(&Bitarraytype) = &PyType_Type;
     Py_TYPE(&BitarrayIter_Type) = &PyType_Type;
+    Py_TYPE(&SearchIter_Type) = &PyType_Type;
+    Py_TYPE(&DecodeIter_Type) = &PyType_Type;
 #ifdef IS_PY3K
     m = PyModule_Create(&moduledef);
     if (m == NULL)
